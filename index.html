@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundo do Jogo</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <section class="parallax" id="parallax-section">
+        <div class="content" id="main-content">
+            <h1>PATH OF THE IMMORTALS</h1>
+            <p>A jornada de um jovem herói em busca da verdade e da redenção.</p>
+        </div>
+
+        <div class="cards">
+            <div class="card" onclick="showContent('story')" id="history-card">
+                <h2>História do Jogo</h2>
+            </div>
+            <div class="card" onclick="showContent('trailer')" id="trailer-card">
+                <h2>Trailer</h2>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seções ocultas inicialmente -->
+    <div id="story" class="hidden content-section">
+        <div class="card-content">
+            <h2>História do Jogo</h2>
+            <p>Em Eldoria, um mundo de paz e harmonia protegido pelos antigos deuses, a Torre do Juízo, que aprisionava o mal, ressurge, ameaçando a existência de toda vida.</p>
+            <p>Envolta em uma aura maligna, a torre começa a liberar monstros terríveis, e uma profecia anuncia que apenas um herói pode impedir a destruição total. Altair, um jovem de origem humilde, é escolhido para escalar a torre e enfrentar o Guardião do Caos no topo.</p>
+            <p>Empunhando a lendária Espada de Orion, Altair enfrenta hordas de criaturas, armadilhas mortais e enigmas complexos.</p>
+            <p>Durante sua jornada, ele descobre que é descendente dos deuses e que o Guardião do Caos é seu avô. No topo, Altair deve decidir entre a destruição ou o sacrifício para salvar Eldoria e restaurar o equilíbrio perdido.</p>
+        </div>
+    </div>
+
+    <div id="trailer" class="hidden content-section">
+        <h2>PATH OF THE IMMORTALS</h2>
+        <video class="video-embed" src="trailer.mp4" type="video/mp4" controls></video>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
